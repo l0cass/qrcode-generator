@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./public/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerar QRCode</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="min-h-screen">
+    <div class="mx-auto container pt-10 pb-10">
+      <p class="text-center text-4xl font-bold">Gerador de QrCode</p>
+
+      <form class="pt-5 pb-5 max-w-lg mx-auto flex flex-col gap-2 content-center">
+        <input type="url" name="field-url" placeholder="Insira a URL aqui" class="w-full p-2 bg-slate-200 rounded-md" required />
+        <button type="submit" class="w-full p-2 text-white bg-blue-700 rounded-md">Gerar QrCode</button>
+      </form>
+
+      <div class="p-2 mx-auto w-fit border-2 border-black rounded-md">
+        <div id="qrcode" class="w-[250px] h-[250px]"></div>
+        <a id="download-qrcode"><button class="w-full p-2 text-white bg-blue-700 rounded-md">Baixar QrCode</button></a>
+      </div>
+    </div>
+
+    <footer>
+      <p class="text-center">Criado por <a class="text-blue-700 underline" href="https://www.linkedin.com/in/lucaspiffer/" target="_blank">Lucas Piffer</a></p>
+      <p class="text-center"><a class="text-blue-700 underline" href="https://www.linkedin.com/in/lucaspiffer/" target="_blank">Repositório</a> referente ao site.</p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
